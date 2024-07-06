@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">Something went wrong</div>
+    <!--
+        this how we create h1 and h1 elements and place them in our html
+         <div>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+        </div>
+    -->
+    <!-- 
+    this is how we add same div and h1 tags using js only
+    <script>
+      const h1 = document.createElement("h1");
+      h1.innerHTML = "h1 heading";
+      const h2 = document.createElement("h2");
+      h2.innerHTML = "h2 heading";
+      const root = document.getElementById("root");
+      //   root.appendChild(h1);
+      // root.appendChild(h2);
+      // or
+      root.append(h1, h2);
+    </script> -->
+    <!-- these below are the 2 react cdn
+        first is react core package and second is the react package which works with dom 
+    -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
